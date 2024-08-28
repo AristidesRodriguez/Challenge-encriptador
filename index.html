@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    
+    <!--Encabezado-->
+    <header>
+        <img class="logo" src="Images/Logo.png" alt="Logo">                    <!--/Clase logo-->
+    </header>
+    
+    <!--Principal-->
+    <main>
+        <section class="section__1">                                            <!--/Clase section__1-->
+            <div class="contenedor__caja__texto">                               <!--/Clase Contenedor caja texto-->
+                <textarea placeholder="Ingresa el texto aqui"
+                class="caja__texto"></textarea>                                 <!--/Clase caja texto-->
+            </div>
+            <div class="alerta">                                                <!--/Clase alerta-->
+                <img src="Images/bi_exclamation-circle-fill.png" alt="">
+                <p> Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="contenedor__botones">                                   <!--/Clase Contenedor botones-->
+                <input type="button" class="btn__encriptar" value="Encriptar">
+                <input type="button" class="btn__desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="section__2">                                            <!--/Clase section__2-->
+            <div class="contenedor__muneco">                                    <!--/Clase Contenedor muneco-->
+                <img src="Images/Muñeco.png" alt="muneco">
+            </div>
+            <div class="contenedor__parrafo">                                   <!--/Clase Contenedor parrafo-->
+                <h3>Ningún mensaje fué <br>
+                    encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br>
+                    desencriptar</p>
+            </div>
+           <div class="contenedor__copiar">                                     <!--/Clase Contenedor copiar-->
+                <input type="button" class="btn__copiar"
+                value="Copiar">
+            </div>
+            <div class="contenedor__resultado">                                 <!--/Clase Contenedor resultado-->
+                <p class="texto__resultado"></p> 
+            </div>
+
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
+   <!-- <footer>
+        <p class="copyright">&copy; Copyright 2024 - Encriptador de Texto - Desarrollado por Aristides Rodriguez</p>
+    </footer>-->
+    
+        <script src="script.js"></script>
+</body>
+
+</html>

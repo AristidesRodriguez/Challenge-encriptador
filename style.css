@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+   
+    --color-primario: #f4f4fc;
+    --color-secundario: #0a3871;
+    --color-terciario: #495057;
+    --color-hover: #272727;
+
+    --fuente-Inter: 'Inter', sans-serif;
+}    
+
+* {
+    padding: 0;
+    margin:0;
+}
+body{
+   
+    background-color: var(--color-primario);
+   
+}
+
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+footer{
+    margin-top:15px;
+    padding: 10px;
+    border-top: 2px;
+    color: gray;
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+
+.logo{
+    width: 120px;
+    height: 48px;
+    gap:    40px;
+    left:   40px;
+    top:    40px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor__caja__texto{
+    position:absolute;
+    left:200px;
+    top: 100px;
+    padding-left: 100px;
+    width: 1080px;
+    height: 600px;
+}
+
+.caja__texto{
+    width:80%;
+    height: 90%;
+    border: none;
+    background-color: var(--color-primario);
+    cursor: pointer;
+    color: var(--color-secundario);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+}
+
+.caja__texto::placeholder{
+    color:var(--color-secundario);
+}
+
+.alerta{
+    position: absolute;
+    top: 750px;
+    left:370px;
+    display: flex;
+    color: var(--color-terciario);
+}
+
+.contenedor__botones{
+    position: absolute;
+    top: 800px;
+    height:80px;
+    padding-left:15%;
+    padding-top: 15px;    
+
+}
+
+.btn__encriptar{
+    width:328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-secundario);
+    /*color: var(--color-secundario);*/
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn__desencriptar{
+    width:328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-primario);
+    /*color: var(--color-secundario);*/
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    margin-right: 20px;
+    border: 1px solid var(--color-secundario);
+    cursor: pointer;
+}
+
+.section__2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 900px;
+    right: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow:0px 24px 32px -8px rgba(0,0,0,50); 
+}
+
+.contenedor__muneco{
+    position:absolute;
+    left: 30px;
+    top: 180px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.contenedor__parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter' sans-serif;
+    text-align: center;
+    color: #343440;
+}
+
+.contenedor__parrafo p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter' sans-serif;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedor__resultado{
+    position: absolute;
+    bottom: 410px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.contenedor__resultado p{
+    color: #495057;
+    font-size: 25px;
+}
+
+.contenedor__copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+
+.btn__copiar{
+    width:328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    /*color: var(--color-secundario);*/
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    margin-right: 20px;
+    border: 1px solid var(--color-secundario);
+    position: relative;
+    cursor: pointer;
+    top: 100px;
+    right: 4px;
+}
+
+.ocultar{
+    display: none;
+}
+
+.copyright {
+    width: 1000px;
+    height: 48px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-terciario);
+}
