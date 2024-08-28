@@ -3,9 +3,10 @@ const txtEncriptar = document.querySelector(".caja__texto");
 const aviso = document.querySelector(".alerta");
 
 const respuesta = document.querySelector(".contenedor__parrafo");
+//const respuesta2 = document.querySelector(".contenedor__resultado");
 const contenido = document.querySelector(".contenedor__muneco");
 
-/*const btnCopiar = document.querySelector(".btn__copiar");*/
+const btnCopiar = document.querySelector(".btn__copiar");
 const btnDesencriptar = document.querySelector(".btn__desencriptar");
 
 //Funcionalidad Encriptar//
@@ -56,6 +57,7 @@ btnEncriptar.addEventListener("click", e=>{
         texto = texto.replace(/u/mg, "ufat"); 
 
         respuesta.innerHTML = texto;
+        btnCopiar.style.visibility = "inherit";
         contenido.remove();
     }
 });
@@ -64,7 +66,7 @@ btnEncriptar.addEventListener("click", e=>{
 
 btnDesencriptar.addEventListener("click", e=>{
     e.preventDefault();
-    let texto = txtDesencriptar.value;
+    let texto = txtEncriptar.value;
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"';,\u0300-\u036f]/g, "");
    
     if(texto==""){
@@ -113,9 +115,10 @@ btnDesencriptar.addEventListener("click", e=>{
 });
 
 //Funcionalidad botón copiar//
-btnCopiar.addEventListener("click", copiar = () => {
-    var contenido2 = document.querySelector(".contenedor__resultado").textContent;
-    navigator.clipboard.writeText(contenido2);
-    console.log(contenido2);
-    /*copiar.select();*/
+btnCopiar.addEventListener("click", e=>{
+    e.preventDefault();
+    let copiar = respuesta;
+    copiar.select();
+    document.execCommand("copy");
+    console.log("Hola");
 });
